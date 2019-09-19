@@ -1,0 +1,11 @@
+{
+  "name": "lilians-nails-spa",
+  "version": "1.0.0",
+  "description": "Website for Lilian's Nails Spa",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Randy Pham",
+  "license": "ISC"
+}
