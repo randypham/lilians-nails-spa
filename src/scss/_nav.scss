@@ -1,0 +1,79 @@
+.nav-btn {
+  appearance: none;
+  background: rgba($black, 0.3);
+  border: 0;
+  border-radius: 0;
+  display: inline-block;
+  width: 45px;
+  padding: 0.5rem;
+  position: fixed;
+  top: 0.5rem;
+  left: 0.5rem;
+  z-index: 2;
+  transition: background-color $transition-speed-normal;
+  &:focus {
+    outline: none;
+  }
+  &:hover {
+    background: rgba($black, 0.5);
+  }
+
+  span {
+    background: $white;
+    display: block;
+    width: 100%;
+    height: 2px;
+    margin-bottom: 0.5rem;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.nav {
+  background: $white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  display: flex;
+  overflow-y: auto;
+  z-index: 1;
+  transform: translateX(-100%);
+  transition: transform $transition-speed-normal;
+
+  &.active {
+    transform: translateX(0);
+  }
+
+  &-list {
+    list-style: none;
+    text-align: center;
+    margin: auto;
+  }
+
+  &-item {
+    margin-bottom: 1rem;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &-link {
+    color: $primary-color;
+    font-family: $font-serif;
+    font-size: 2rem;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    transition: color $transition-speed-normal;
+    &:hover {
+      color: $primary-light-color;
+    }
+    @include bp-lg {
+      padding: 0.25rem;
+    }
+  }
+}
