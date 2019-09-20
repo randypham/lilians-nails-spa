@@ -1,0 +1,37 @@
+// Colors
+$orchidpink: #f2b5d4;
+$pale-pink: #f7d6e0;
+$sky-blue: #7bdff2;
+$blue-lagoon: #a4e5f2;
+
+$black: #111;
+$white: #fff;
+
+$gray: #999;
+$gray-dark-1: #777;
+$gray-dark-2: #555;
+$gray-dark-3: #333;
+$gray-light-1: #ccc;
+$gray-light-2: #ddd;
+$gray-light-3: #f8f8f8;
+
+$primary-color: $orchidpink;
+$primary-light-color: $pale-pink;
+$secondary-color: $sky-blue;
+$secondary-light-color: $blue-lagoon;
+
+$text-color: $gray-dark-2;
+$heading-color: $gray-dark-3;
+
+// Typography
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Playfair+Display');
+
+$font-sans-serif: 'Open Sans', verdana, sans-serif;
+$font-serif: 'Playfair Display', georgia, sans-serif;
+$font-size: 16px;
+
+// Media Query Breakpoints
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;

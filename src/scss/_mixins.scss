@@ -1,0 +1,24 @@
+// Media Queries
+@mixin bp-sm {
+  @media screen and (min-width: $breakpoint-sm) {
+    @content;
+  }
+}
+
+@mixin bp-md {
+  @media screen and (min-width: $breakpoint-md) {
+    @content;
+  }
+}
+
+@mixin bp-lg {
+  @media screen and (min-width: $breakpoint-lg) {
+    @content;
+  }
+}
+
+@mixin bp-xl {
+  @media screen and (min-width: $breakpoint-xl) {
+    @content;
+  }
+}

@@ -16,20 +16,16 @@ function styles() {
     .pipe(browserSync.stream());
 }
 
-// Start server
-function server() {
+// Watch for html, scss, and javascript changes
+function watch() {
+  // Start server
   browserSync.init({
     server: {
       baseDir: './build'
     }
   });
-}
 
-// Watch for html, scss, and javascript changes
-function watch() {
-  server();
-
-  gulp.watch('./*.html').on('change', browserSync.reload);
+  gulp.watch('./build/*.html').on('change', browserSync.reload);
   gulp.watch('./src/scss/**/*.scss', styles);
 }
 

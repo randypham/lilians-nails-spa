@@ -1,0 +1,47 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: $font-size;
+}
+
+body {
+  color: $text-color;
+  background: $white;
+  font-family: $font-sans-serif;
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $heading-color;
+  font-family: $font-serif;
+  font-weight: 400;
+  letter-spacing: 1.5px;
+  margin: 0 0 1rem 0;
+}
+
+p {
+  letter-spacing: 1px;
+  line-height: 1.7;
+  margin: 0 0 1rem 0;
+}
+
+a {
+  cursor: pointer;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  cursor: pointer;
+}
