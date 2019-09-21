@@ -3,6 +3,7 @@
 const gulp = require('gulp');
 const sass = require('gulp-sass');
 const sourceMaps = require('gulp-sourcemaps');
+const imagemin = require('gulp-imagemin');
 const browserSync = require('browser-sync').create();
 
 // Compile scss
@@ -29,6 +30,15 @@ function watch() {
   gulp.watch('./src/scss/**/*.scss', styles);
 }
 
+// Optimize images
+function images() {
+  return gulp
+    .src('./src/img/*')
+    .pipe(imagemin([imagemin.jpegtran({ progressive: true })]))
+    .pipe(gulp.dest('./build/img'));
+}
+
 exports.styles = styles;
 exports.watch = watch;
+exports.images = images;
 exports.default = watch;

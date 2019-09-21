@@ -1,0 +1,35 @@
+.hero {
+  background: $hero-color;
+  background-image: $hero-color, url('../img/hero-sm.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  padding: 1rem;
+  width: 100%;
+  height: 100vh;
+  @include bp-md {
+    background-image: $hero-color, url('../img/hero-md.jpg');
+  }
+  @include bp-lg {
+    background-image: $hero-color, url('../img/hero-lg.jpg');
+  }
+
+  &-content {
+    text-align: center;
+    margin: auto;
+  }
+
+  &-title {
+    color: $white;
+    font-size: 4rem;
+    text-shadow: 0 10px 25px rgba($text-color, 0.4);
+    margin: 0;
+    @include bp-lg {
+      font-size: 5rem;
+    }
+    @include bp-xl {
+      font-size: 6rem;
+    }
+  }
+}
