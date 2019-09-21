@@ -1,0 +1,37 @@
+.container {
+  max-width: 1152px;
+  margin: 0 auto;
+  padding: 0 1rem;
+
+  &.narrow {
+    max-width: 600px;
+  }
+}
+
+.header {
+  background: transparent;
+}
+
+.section {
+  padding: 4rem 0;
+  @include bp-lg {
+    padding: 6rem 0;
+  }
+
+  &-title {
+    font-size: 2rem;
+    text-align: center;
+    &::after {
+      background: $primary-color;
+      display: block;
+      content: '';
+      width: 50px;
+      height: 3px;
+      margin: 0.75rem auto 0 auto;
+    }
+  }
+
+  .text-center {
+    text-align: center;
+  }
+}
