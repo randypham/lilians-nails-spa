@@ -1,0 +1,16 @@
+.tile {
+  background-color: $white;
+  padding: 3rem 1rem;
+
+  &-heading {
+    font-size: 1.25rem;
+    &::after {
+      background: $primary-color;
+      display: block;
+      content: '';
+      width: 25px;
+      height: 2px;
+      margin: 0.75rem auto 0 auto;
+    }
+  }
+}

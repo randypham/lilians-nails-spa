@@ -1,0 +1,14 @@
+.list {
+  list-style: none;
+
+  &-center {
+    text-align: center;
+  }
+
+  &-item {
+    margin-bottom: 0.5rem;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

@@ -3,7 +3,7 @@
   margin: 0 auto;
   padding: 0 1rem;
 
-  &.narrow {
+  &-narrow {
     max-width: 600px;
   }
 }
@@ -16,6 +16,10 @@
   padding: 4rem 0;
   @include bp-lg {
     padding: 6rem 0;
+  }
+
+  &-light {
+    background-color: $bg-light;
   }
 
   &-title {
