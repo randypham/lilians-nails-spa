@@ -1,0 +1,16 @@
+.btn {
+  appearance: none;
+  background: $primary-color;
+  border: 0;
+  border-radius: 0;
+  color: $white;
+  display: inline-block;
+  padding: 0.75rem 2rem;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: background-color $transition-speed-normal;
+  &:hover {
+    background-color: $primary-light-color;
+  }
+}
