@@ -60,3 +60,16 @@
     }
   }
 }
+
+.footer {
+  padding: 1.5rem 0;
+  text-align: center;
+
+  .text-sm {
+    font-size: 0.9rem;
+    margin-bottom: 0.75rem;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
