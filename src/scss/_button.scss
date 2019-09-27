@@ -14,3 +14,12 @@
     background-color: $primary-light-color;
   }
 }
+
+.btn-link {
+  color: $text-color;
+  text-decoration: none;
+  transition: color $transition-speed-normal;
+  &:hover {
+    color: $primary-color;
+  }
+}
