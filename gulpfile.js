@@ -3,6 +3,8 @@
 const gulp = require('gulp');
 const sass = require('gulp-sass');
 const sourceMaps = require('gulp-sourcemaps');
+const babel = require('gulp-babel');
+const uglify = require('gulp-uglify');
 const imagemin = require('gulp-imagemin');
 const browserSync = require('browser-sync').create();
 
@@ -17,6 +19,16 @@ function styles() {
     .pipe(browserSync.stream());
 }
 
+// Optimize JavaScript files
+function scripts() {
+  return gulp
+    .src('./src/js/app.js')
+    .pipe(babel({ presets: ['@babel/env'] }))
+    .pipe(uglify())
+    .pipe(gulp.dest('./build/js'))
+    .pipe(browserSync.stream());
+}
+
 // Watch for html, scss, and javascript changes
 function watch() {
   // Start server
@@ -28,6 +40,7 @@ function watch() {
 
   gulp.watch('./build/*.html').on('change', browserSync.reload);
   gulp.watch('./src/scss/**/*.scss', styles);
+  gulp.watch('./src/js/app.js', scripts);
 }
 
 // Optimize images
@@ -39,6 +52,7 @@ function images() {
 }
 
 exports.styles = styles;
+exports.scripts = scripts;
 exports.watch = watch;
 exports.images = images;
 exports.default = watch;
