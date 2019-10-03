@@ -18,3 +18,24 @@ function hideNav(e) {
 
 navBtn.addEventListener('click', toggleNav);
 navList.addEventListener('click', hideNav);
+
+// ==================================================
+// GOOGLE MAPS
+// ==================================================
+
+function initMap() {
+  // map options
+  const options = {
+    center: { lat: 39.9731909, lng: -76.6810982 },
+    zoom: 15
+  };
+
+  // new map
+  const map = new google.maps.Map(document.getElementById('map'), options);
+
+  // add marker
+  const marker = new google.maps.Marker({
+    position: options.center,
+    map: map
+  });
+}
