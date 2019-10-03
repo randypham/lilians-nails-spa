@@ -4,7 +4,7 @@
   "description": "Website for Lilian's Nails Spa",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "gulp": "gulp"
   },
   "author": "Randy Pham",
   "license": "ISC",
