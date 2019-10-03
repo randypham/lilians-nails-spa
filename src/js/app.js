@@ -39,3 +39,14 @@ function initMap() {
     map: map
   });
 }
+
+// ==================================================
+// SCROLL REVEAL
+// ==================================================
+
+window.sr = ScrollReveal();
+
+sr.reveal('.scroll-fade', {
+  duration: 1600,
+  origin: 'bottom'
+});
