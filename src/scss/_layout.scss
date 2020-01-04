@@ -49,9 +49,7 @@
     padding: 0 15px;
     margin-bottom: 20px;
     width: 100%;
-    &:last-child {
-      margin-bottom: 0;
-    }
+
     @include bp-sm {
       width: calc(100% / 2);
     }
